@@ -6,8 +6,7 @@ from colors import *
 
 class Student:
 
-    def __init__(
-        self, last, first, ssn, email, age):
+    def __init__(self, last, first, ssn, email, age):
         self.mLast = last
         self.mFirst = first
         self.mSsn = ssn
