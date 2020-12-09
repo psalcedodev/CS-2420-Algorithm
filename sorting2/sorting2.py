@@ -87,26 +87,26 @@ def mergesort(a):
     # print(a)
 
 
-def counting(a):
+# def counting(a):
 
-    frequency = []
-    for i in range(len(a)):
-        frequency.append(0)
-    for i in range(len(a)):
-        frequency[a[i]] += 1
-    count = 0
-    for i in range(len(frequency)):
-        for j in range(frequency[i]):
-            a[count] = i
-            count += 1
+#     frequency = []
+#     for i in range(len(a)):
+#         frequency.append(0)
+#     for i in range(len(a)):
+#         frequency[a[i]] += 1
+#     count = 0
+#     for i in range(len(frequency)):
+#         for j in range(frequency[i]):
+#             a[count] = i
+#             count += 1
 
 
 def main():
     count = 0
-    for sort in (quick_sort, modified_quick_sort, mergesort, counting):
+    for sort in (quick_sort, modified_quick_sort, mergesort):
 
         test_array = [4, 7, 2, 1, 8, 3, 9, 5]
-        a = createRandomList(10)
+        a = ["P", "S", "A", "W", "J", "T", "H", "Y"]
         b = a[:]
         print('[Random Numbers]')
         print(a)
